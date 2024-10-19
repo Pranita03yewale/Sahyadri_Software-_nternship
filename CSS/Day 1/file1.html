@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS styling</title>
+
+    <!-- Internal CSS-->
+    <style>
+        /* this is comment in CSS */
+        body {
+            /* for background images */
+            background-image: url("ganpati.webp");
+
+            /*By default, the background-image property repeats an image both horizontally and vertically.*/
+            background-repeat: no-repeat;
+
+            /*background-position property is used to specify the position of the background image.*/
+            background-position: top;
+
+            /* background-attachment property specifies whether the background image should scroll or be fixed */
+            background-attachment: scroll;
+
+            /*The background-size property specifies the size of the background images*/
+            background-size: cover;
+
+        }
+
+        /*  for different borders*/
+        /* Margins are used to create space around elements, outside of any defined borders.*/
+        /*Padding is used to create space around an element's content, inside of any defined borders.*/
+        #dotted {
+            border-style: dotted;
+            margin-top: 40px;
+            padding-top: 20px;
+        }
+
+        #solid {
+            border-style: solid;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+        }
+
+        #dashed {
+            border-style: dashed;
+            margin-left: 40px;
+            padding-left: 20px;
+        }
+
+        #grooved {
+            border-style: groove;
+            border-color: blue;
+            margin-right: 40px;
+            padding-right: 20px;
+        }
+
+        #ridged {
+            border-style: ridge;
+            border-color: blue;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        #inset {
+            border-style: inset;
+            border-color: blue;
+        }
+
+        #outset {
+            border-style: outset;
+            border-color: blue;
+        }
+
+        #none {
+            border-style: none;
+        }
+
+        #hidden {
+            border-style: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Inline CSS-->
+    <h1 style="background-color: blanchedalmond; color: blue; text-align: center;">WELCOME</h1>
+
+    <p id="dotted">This is dotted border</p>
+    <p id="solid">This is solid border</p>
+    <p id="dashed"> This is dashed border</p>
+    <p id="grooved"> Define a 3D grooved border. The effect depends on the border-color value</p>
+    <p id="ridged">Defines a 3D ridged border. The effect depends on the border-color value</p>
+    <p id="inset"> Defines a 3D inset border. The effect depends on the border-color value</p>
+    <p id="outset">Defines a 3D outset border. The effect depends on the border-color value</p>
+    <p id="none"> Defines no border</p>
+    <p id="hidden">Defines a hidden border</p>
+
+</body>
+
+</html>
