@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basic</title>
+
+    <style>
+        p.max-width {
+            max-width: 250px;
+            max-height: 150px;
+        }
+
+        p.width {
+            width: 350px;
+            height: 100px;
+        }
+
+        p.min-width {
+            min-width: 200px;
+            min-height: 150px;
+        }
+
+        /* Css Box*/
+        p.mbpc {
+            margin: 50px;
+            padding: 30px;
+            border-style: dotted;
+        }
+
+        p.outline {
+            border-style: double;
+            border-color: brown;
+            outline-offset: 15px;
+            outline-style: dashed;
+            outline-color: blue;
+            outline-width: thick;
+            margin: 20px;
+            background-color: bisque;
+            padding: 20px;
+        }
+
+        #dotted {
+            border-style: groove;
+            outline-style: dotted;
+            outline-color: blue;
+            outline-offset: 5px;
+            outline-width: 5px;
+        }
+
+        #solid {
+            border-style: groove;
+            outline-style: solid;
+            outline-color: blue;
+            outline-offset: 5px;
+            outline-width: 5px;
+        }
+
+        #dashed {
+            border-style: groove;
+            outline-style: dashed;
+            outline-color: blue;
+            outline-offset: 5px;
+            outline-width: 5px;
+
+        }
+
+        #grooved {
+            border-style: groove;
+            outline-style: groove;
+            outline-color: blue;
+            outline-offset: 5px;
+            outline-width: 5px;
+        }
+
+        #ridged {
+            border-style: groove;
+            outline-style: ridge;
+            outline-color: blue;
+
+        }
+
+        #inset {
+            border-style: groove;
+            outline-style: inset;
+            outline-color: blue;
+        }
+
+        #outset {
+            border-style: groove;
+            outline-style: outset;
+            outline-color: blue;
+        }
+
+        #none {
+            border-style: groove;
+            outline-style: none;
+        }
+
+        #hidden {
+            outline-style: hidden;
+        }
+
+        /* Text alignments , text-transform, text indent, letter spacing, word spacing*/
+        p.text-center {
+            text-align: center;
+            border-style: groove;
+            padding: 20px;
+            text-transform: uppercase;
+            text-indent: 50;
+            letter-spacing: 5px;
+            line-height: 50px;
+            word-spacing: 10px;
+        }
+
+        p.text-right {
+            text-align: right;
+            border-style: groove;
+            padding: 20px;
+            text-transform: lowercase;
+            text-indent: 30px;
+            /*letter-spacing: -2px;*/
+            line-height: 10px;
+            word-spacing: -2;
+
+        }
+
+        p.text-left {
+            text-align: left;
+            border-style: groove;
+            padding: 20px;
+            text-transform: capitalize;
+            text-indent: 70px; 
+            letter-spacing: normal;
+            line-height: normal;   
+        }
+
+        p.text-justify {
+            text-align: justify;
+            border-style: groove;
+            padding: 20px;
+            
+        }
+
+        /* text-align-last*/
+        p.dog {
+            border-style: groove;
+            padding: 20px;
+            text-align-last: left;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p class="max-width">This is a max width Example! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis non
+        placeat, similique iusto ratione iure, ut molestias tempora voluptate, amet suscipit harum sunt qui repellendus
+        porro esse numquam! Rerum, quam.</p>
+    <p class="width">This is a width Example! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eligendi
+        ipsa maiores, sequi eos ut voluptatem similique placeat unde! Repellendus accusantium, maiores exercitationem
+        rerum provident eveniet necessitatibus reiciendis cum iste?</p>
+    <p class="min-width">This is a min width Example! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        ipsam dolore iusto tenetur at delectus accusamus. Ipsam et quam incidunt, quae velit totam quod ipsum aperiam
+        vel, modi iusto corporis?</p>
+
+    <p class="mbpc">(Margin + Border + Padding + Content) Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Inventore nemo,
+        quis aspernatur quam, architecto excepturi quae laudantium eveniet laboriosam deserunt eaque saepe rem
+        necessitatibus quibusdam? Est voluptate voluptates quas repellat. </p>
+
+    <p class="mbpc">(Margin + Border + Padding + Content) Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Inventore nemo,
+        quis aspernatur quam, architecto excepturi quae laudantium eveniet laboriosam deserunt eaque saepe rem
+        necessitatibus quibusdam? Est voluptate voluptates quas repellat. </p>
+
+    <p class="outline">OUTLINE</p>
+
+    <p class="outline">OUTLINE</p><br><br><br>
+    <hr>
+
+
+    <h2>Outlines</h2>
+    <p id="dotted">This is dotted outline</p>
+    <p id="solid">This is solid outline</p>
+    <p id="dashed"> This is dashed outline</p>
+    <p id="grooved"> Define a 3D grooved outline. The effect depends on the outline-color value</p>
+    <p id="ridged">Defines a 3D ridged outline. The effect depends on the outline-color value</p>
+    <p id="inset"> Defines a 3D inset outline. The effect depends on the outline-color value</p>
+    <p id="outset">Defines a 3D outset outline. The effect depends on the outline-color value</p>
+    <p id="none"> Defines no outline</p>
+    <p id="hidden">Defines a hidden outline</p>
+
+    <hr>
+    <h2>Text Alignment, text-transform, text indent, letter spacing, Line hight, word spacing</h2>
+    <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi necessitatibus obcaecati
+        molestiae hic harum quod
+        facilis ex delectus, possimus quisquam aliquid ab. Pariatur quidem nemo voluptate, molestiae dolorem quae ipsum.
+    </p>
+    <p class="text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus similique cupiditate cumque
+        quam libero
+        perspiciatis inventore repellat laboriosam, illo, dolore ducimus velit? Necessitatibus laboriosam sit enim
+        molestias eveniet, quo tenetur.</p>
+    <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus similique cupiditate cumque
+        quam libero
+        perspiciatis inventore repellat laboriosam, illo, dolore ducimus velit? Necessitatibus laboriosam sit enim
+        molestias eveniet, quo tenetur.</p>
+    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus similique cupiditate
+        cumque quam libero
+        perspiciatis inventore repellat laboriosam, illo, dolore ducimus velit? Necessitatibus laboriosam sit enim
+        molestias eveniet, quo tenetur.</p>
+
+        <hr><h3>text-align-last</h3>
+    <p class="dog">Dogs are mammals, usually kept as pets, for work on farms or for the police. Some dogs are trained to
+        be rescue dogs and join teams such as mountain rescue. They have been bred by humans from their ancestral wolves. They
+        were the first animals to live. There was a lot of variety among wolves in the Late Pleistocene. The dingo is
+        also a dog, but many dingos have become wild animals again and live in the wild, away from humans (parts of
+        Australia). with humans.
+    </p>
+
+
+</body>
+
+</html>
