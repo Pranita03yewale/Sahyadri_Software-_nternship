@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css for list</title>
+    <style>
+        ul.a {
+            /*list-style-type => specifies the style of the bullet points*/
+            list-style-type: circle;
+        }
+
+        ul.b {
+            list-style-type: square;
+            /* list-style-position => specifies the position of list-item markers(bullet point)*/
+            list-style-position: outside;
+        }
+
+        ol.c {
+            list-style-type: upper-roman;
+            list-style-position: inside;
+        }
+
+        ol.d {
+            /* Remove Default settings*/
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>List</h2>
+    <ul class="a">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+    </ul><hr>
+    <ul class="b">
+        <h2>List-style-position outside</h2>
+        <li>one Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, similique nihil! Laborum at
+            laudantium, doloremque nobis voluptas totam facere aliquid consequuntur atque numquam, dolorem tempora,
+            delectus accusantium in. Nihil, ipsum!</li>
+        <li>two Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, aut cum. Neque aperiam et sapiente
+            voluptatibus, quis sed tempore vitae alias? Perferendis sequi soluta nisi possimus, dicta expedita dolore
+            dolorem?</li>
+        <li>three Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem modi esse vel sunt ipsam!
+            Iste perferendis voluptates ducimus unde, vel beatae quis expedita quam illo, neque fuga temporibus natus
+            laudantium.</li>
+        <li>four</li>
+        <li>five</li>
+    </ul><hr>
+    <ol class="c">
+        <h2>List-style-position inside</h2>
+        <li>one Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi autem sit molestias odit magni, sed quo
+            minima, aspernatur, deserunt atque quam vel impedit distinctio reiciendis enim voluptatem velit voluptas
+            animi.</li>
+        <li>two Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro aliquam vel. Nam similique
+            repudiandae voluptatibus inventore nulla natus ducimus, mollitia, blanditiis nesciunt aliquam quam.
+            Consectetur exercitationem reprehenderit dolorem cupiditate!</li>
+        <li>three Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit omnis voluptatum cumque maxime
+            temporibus. Assumenda magnam ipsam quis voluptatem, qui, cum voluptatibus autem repudiandae reprehenderit
+            pariatur veniam animi quo doloremque?</li>
+        <li>four</li>
+        <li>five</li>
+    </ol><hr>
+    <ol class="d">
+        <h3>Remove Default settings</h3>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+    </ol>
+</body>
+
+</html>
