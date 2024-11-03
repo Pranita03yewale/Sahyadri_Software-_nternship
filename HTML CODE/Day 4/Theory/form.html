@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Attributes</title>
+</head>
+
+<body>
+    <form action="">
+
+        <!-- Readonly => specifies that an input field is read-only.
+                        read-only field cannot be modified.(but user can highlight or copy it.)
+                        red-only input field will be sent when form is submitting. -->
+        <h2>readonly</h2>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" value="Pranita" readonly><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" value="Yewale"><br><br>
+
+        <input type="submit" value="Submit"><br>
+
+
+        <!-- Disabled Attribute => specifies that an input field should be disabled.
+                                    A disabled inputbfield is unusable and un-clickable.
+                                    The value of a disale input field will not be send when submitting the form.-->
+        <h2>disabled</h2>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" value="Pranita" disabled><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" value="Yewale"><br><br>
+
+
+        <!-- Required Attribute => specifies that an input field must be filled out before submitting the form.
+                                    works with following input types : text, search, url, tel, email, password, date pickers, numbers,checkbox, radio,and file. -->
+        <h2>required</h2>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password">Password:</label><br>
+        <input type="text" id="password" name="password"><br>
+        
+
+        <!-- The Size Attribute => specibute the visible width, in characters, of an input field.
+                                    by default value for size is 20.
+                                    works with input types: text, password, search, tel, url, email.-->
+        <h2>The Size Attribute</h2>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" size="50"><br>
+
+        <!--The Maxlength Attribute => specifies the maximum number of characters allowed in input field.
+                                        is set, the input field will not accept more than the specified number of characters.-->
+        <h2>The Maxlength Attribute</h2>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" size="50"><br>
+        <label for="pin">PIN:</label>
+        <input type="text" id="pin" name="pin" maxlength="4" size="4">
+
+        <!--The Minimum length Attribute-->
+        <h2>The minilength Attribute</h2>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" size="50"><br>
+        <label for="pin">PIN:</label>
+        <input type="text" id="pin" name="pin" minilength="2" size="4">
+
+        <!-- mini & max length Attribute => works with the following input types : date, datetime-local, month, time, week.-->
+        <h2>mini & max length combine</h2>
+        <label for="pin">PIN:</label>
+        <input type="text" id="pin" name="pin" minilength="2" maxlength="4" size="8"><br><br>
+
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+        <label for="quantity">Ountity (between 1 and 5):</label>
+        <input type="number" name="quantity" id="quantity" min="1" max="5"><br><br>
+
+    </form>
+
+    <!-- Action Attribute => Defines the action to be performed when the form is submitted.
+                            usually, the from data is send to a file -->
+    <form action="/action_page.php" autocomplete="on">
+        <!-- Autocomplete => specifies whether form or an input field shoud have autocomplete on or off.
+                            Allows browser to predict the valiue. When user starts to type in a field, the browser should display option to fill the field, based on earlier typed values.-->
+        <h2>autocomplete</h2>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" autocomplete="off"><br><br>
+        <label for="email">Email:</label><br>
+
+        <!-- Autofocus Attribute => specifies thet an input field should automatically get focus when the page loads-->
+        <h2>autofocus</h2>
+        <input type="text" id="email" name="email" autofocus><br><br>
+        <input type="submit" value="submit">
+
+        <!-- The miltiple Attribute => specifies that the user is allowed to enter more than one value in an input field.
+                                        The multiple attribute works with the following input types: email, and file-->
+        <h2>for select files</h2>
+        <label for="files"> Select files:</label>
+        <input type="file" id="file" name="file" accept=".pdf, .jpg, .png" multiple>
+
+    </form>
+</body>
+
+</html>
