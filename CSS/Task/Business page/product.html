@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Playful Planet</title>
+
+    <style>
+        /* General styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Main content styling */
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        /* Product grid styling */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        /* Individual product card styling */
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .product-name {
+            color: #ff6f61;
+            font-size: 1.3em;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .product-description {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 10px;
+            padding: 0 10px;
+        }
+
+        .product-price {
+            color: #ff6f61;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Back to Home Link */
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .back-link:hover {
+            color: #ff3b2e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>Our Products</header>
+
+    <div class="content">
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="toy 1.jpeg" alt="Toy Car">
+                <div class="product-name">Toy Car</div>
+                <div class="product-description">High-quality, durable toy car that enhances motor skills.</div>
+                <div class="product-price">$10.99</div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <img src="toy2.jpeg" alt="Building Blocks">
+                <div class="product-name">Building Blocks</div>
+                <div class="product-description">Colorful blocks that encourage creativity and imagination.</div>
+                <div class="product-price">$15.99</div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <img src="toy3.jpeg" alt="Plush Teddy Bear">
+                <div class="product-name">Plush Teddy Bear</div>
+                <div class="product-description">Soft and cuddly teddy bear, perfect for children of all ages.</div>
+                <div class="product-price">$12.99</div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <img src="toy4.jpeg" alt="Puzzle Set">
+                <div class="product-name">Puzzle Set</div>
+                <div class="product-description">Educational puzzle set to develop problem-solving skills.</div>
+                <div class="product-price">$9.99</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Home Link -->
+    <a href="home.html" class="back-link">Back to Home</a>
+
+</body>
+</html>
