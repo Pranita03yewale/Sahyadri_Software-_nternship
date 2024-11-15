@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind CSS</title>
+</head>
+
+<body>
+    <!--Border width & color-->
+    <h1>1.Border width & color</h1>
+    <div class="border-2 border-green-100 m-10">
+        <div class="w-96 m-3 p-5 border">Border all Around</div>
+        <div class="w-96 m-3 p-5 border border-2">Border width </div>
+        <div class="w-96 m-3 p-5 border border-4">Border width</div>
+        <div class="w-96 m-3 p-5 border border-8">Border width</div>
+        <div class="w-96 m-3 p-5 border border-x-4 border-red-500">Border width to X axis</div>
+        <div class="w-96 m-3 p-5 border border-y-4 border-red-500">Border width to X axis</div>
+
+    </div>
+
+    <!--Border radius-->
+    <h1>2.Border Radius</h1>
+    <div class="border-2 border-green-100 m-10">
+        <div class="w-96 m-3 p-5 bg-teal-200 rounded">Border Rounded
+        </div>
+        <div class="w-96 m-3 p-5 bg-teal-200 rounded-md">Border Rounded
+        </div>
+        <div class="w-96 m-3 p-5 bg-teal-200 rounded-lg">Border Rounded
+        </div>
+        <div class="w-96 m-3 p-5 bg-teal-200 rounded-xl">Border Rounded
+        </div>
+    </div>
+    </div>
+
+    <!--Specific sodes-->
+    <h1>3. Specific sodes</h1>
+    <div class="rounded-b bg-blue-400 w-1/2 ml-4">tailwind-bottom</div><br>
+    <div class="rounded-t-md bg-blue-400  w-1/2  ml-4">tailwind top</div><br>
+    <div class="rounded-l-lg bg-blue-400  w-1/2  ml-4">tailwind left</div><br>
+    <div class="rounded-r-full bg-blue-400  w-1/2  ml-4">tailwind right</div><br>
+    <hr><br>
+
+    <!--Contrast-->
+    <h1>4. Contrast</h1>
+    <div class="flex border m-10 p-10 space-x-2">
+        <img class="w-[150px] h-[150px] contrast-50" src="mountain.jpeg" alt="">
+        <img class="w-[150px] h-[150px] contrast-100" src="mountain.jpeg" alt="">
+        <img class="w-[150px] h-[150px] contrast-125" src="mountain.jpeg" alt="">
+        <img class="w-[150px] h-[150px] contrast-200" src="mountain.jpeg" alt="">
+    </div><br>
+
+    <!--saturate-100-->
+    <h1>5. saturate-100</h1>
+    <div class="flex border m-10 p-10 space-x-2">
+        <img class="w-[150px] h-[150px] saturate-50" src="mountain.jpeg" alt="">
+        <img class="w-[150px] h-[150px] saturate-100" src="mountain.jpeg" alt="">
+        <img class="w-[150px] h-[150px] saturate-125" src="mountain.jpeg" alt="">
+        <img class="w-[150px] h-[150px] saturate-200" src="mountain.jpeg" alt="">
+    </div><br>
+
+    <!--blur-->
+    <h1>6. Blur</h1>
+    <div class="flex border m-10 p-10 space-x-2">
+        <img class="w-[150px] h-[150px] blur-sm" src="mountain.jpeg" alt="">
+        <img class="w-[150px] h-[150px] blur-lg" src="mountain.jpeg" alt="">
+        <img class="w-[150px] h-[150px] blur-md" src="mountain.jpeg" alt="">
+        <img class="w-[150px] h-[150px] saturate-200" src="mountain.jpeg" alt="">
+    </div>
+
+    <!--Flex-->
+    <h1>7. Flex</h1>
+    <div class="border m-10">
+        <ul class="flex justify-around">
+            <li class="bg-teal-100 m-5 p-5 ">01</li>
+            <li class="bg-teal-100 m-5 p-5 ">02</li>
+            <li class="bg-teal-100 m-5 p-5 ">03</li>
+            <li class="bg-teal-100 m-5 p-5 ">04</li>
+            <li class="bg-teal-100 m-5 p-5 ">05</li>
+        </ul>
+    </div>
+
+    <div class="border m-10">
+        <div class="flex w-100">
+          <!-- flex-none  It prevents item from growing and shrinking -->
+          <div class="p-5 m-3 w-64 bg-teal-100 flex-none">01</div>
+          <!-- Allow items to shrink but not grow, taking its initial size -->
+          <div class="p-5 m-3 w-64 bg-teal-100 flex-initial">02</div>
+          <!-- Allow item to grow and shrink as needed ignoring its initial size -->
+          <div class="p-5 m-3 w-64 bg-teal-100 flex-auto">03</div>
+          <div class="p-5 m-3 w-64 bg-teal-100 flex-1">04</div>
+          <div class="p-5 m-3 w-64 bg-teal-100 ">05</div>
+          <div class="p-5 m-3 w-64 bg-teal-100 ">06</div>
+          <div class="p-5 m-3 w-64 bg-teal-100 ">07</div>
+        </div>
+    </div><br><hr><br>
+
+    <!--Grid-->
+    <h1>Grid</h1>
+    <div class="p-10">
+        <div class="w-100 grid grid-cols-3 grid-rows-4 gap-4 ">
+            <div class="p-10 bg-teal-200">01</div>
+            <div class="p-10 bg-teal-200">02</div>
+            <div class="p-10 bg-teal-200">03</div>
+            <div class="p-10 bg-teal-200">04</div>
+            <div class="p-10 bg-teal-200">05</div>
+            <div class="p-10 bg-teal-200">06</div>
+            <div class="p-10 bg-teal-200">07</div>
+            <div class="p-10 bg-teal-200">08</div>
+            <div class="p-10 bg-teal-200">09</div>
+            <div class="p-10 bg-teal-200">10</div>
+            <div class="p-10 bg-teal-200">11</div>
+            <div class="p-10 bg-teal-200">12</div>
+          </div>
+      <br>
+      
+      <h1>Col and Row Span</h1>
+          <div class="w-100 grid grid-cols-3 grid-rows-4 gap-4 ">
+            <div class="p-10 bg-teal-200 col-span-2 row-span-2">01</div>
+            <div class="p-10 bg-teal-200 grid-flow-col">02</div>
+            <div class="p-10 bg-teal-200">03</div>
+            <div class="p-10 bg-teal-200 col-span-2">04</div>
+            <div class="p-10 bg-teal-200">05</div>
+            <div class="p-10 bg-teal-200">06</div>
+            <div class="p-10 bg-teal-200">07</div>
+            <div class="p-10 bg-teal-200">08</div>
+                  <div class="p-10 bg-teal-200 col-span-3">09</div>
+            <div class="p-10 bg-teal-200">10</div>
+            <div class="p-10 bg-teal-200">11</div>
+            <div class="p-10 bg-teal-200">12</div>
+          </div>
+    </div>
+    
+
+
+</body>
+
+</html>

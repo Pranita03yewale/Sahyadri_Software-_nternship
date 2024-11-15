@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <nav class="bg-gray-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="text-lg font-bold">Logo</div>
+
+        <!-- Hamburger Menu (Small Screens) -->
+        <label for="menu-toggle" class="block md:hidden text-2xl cursor-pointer">
+          ☰
+        </label>
+        <input type="checkbox" id="menu-toggle" class="hidden">
+
+        <!-- Navigation Links -->
+        <ul 
+          class="hidden md:flex md:space-x-8 md:justify-center lg:justify-end lg:space-x-12 lg:pr-4 
+          md:flex-row flex-col absolute md:static w-full left-0 bg-gray-800 md:bg-transparent"
+        >
+          <li><a href="#" class="block px-4 py-2 md:p-0 hover:text-gray-400">Home</a></li>
+          <li><a href="#" class="block px-4 py-2 md:p-0 hover:text-gray-400">About</a></li>
+          <li><a href="#" class="block px-4 py-2 md:p-0 hover:text-gray-400">Services</a></li>
+          <li><a href="#" class="block px-4 py-2 md:p-0 hover:text-gray-400">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>

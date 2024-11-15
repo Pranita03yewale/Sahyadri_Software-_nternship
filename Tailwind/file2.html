@@ -125,13 +125,106 @@
         <p class="w-5 bg-blue-400">5</p>
         <p class="w-96 bg-blue-400">96</p>
         <p class="w-auto bg-blue-400">auto</p>
-
-
-
-
+    </div>
+    <br><hr><br>
+    <!--Percentage-->
+    <h1>Percentage</h1>
+    <div class="container bg-pink-200">
+        <p class="w-full bg-blue-400">full</p>
+        <p class="w-1/2 bg-blue-400">1/5</p>
+        <p class="w-2/5 bg-blue-400">2/5</p>
+        <p class="w-3/5 bg-blue-400">3/5</p>
+        <p class="w-4/5 bg-blue-400">4/5</p>
+        <p class="w-1/6 bg-blue-400">1/6</p>
+        <p class="w-5/6 bg-blue-400">5/6</p>
+        
+    </div>
+    <br><hr><br>
+    <!--max-width-->
+    <h1>max-width</h1>
+    <div class="container bg-pink-200">
+        <p class="w-full max-w-0 bg-blue-400">0</p>
+        <p class="w-full max-w-px bg-blue-400">px</p>
+        <p class="w-full max-w-0.5 bg-blue-400">0.5</p>
+        <p class="w-full max-w-1 bg-blue-400">1</p>
+        <p class="w-full max-w-2 bg-blue-400">2</p>
+        <p class="w-full max-w-3 bg-blue-400">3</p>
+        <p class="w-full max-w-4 bg-blue-400">4</p>
+        <p class="w-full max-w-5 bg-blue-400">5</p>
+        <p class="w-full max-w-96 bg-blue-400">96</p>
+        <p class="w-full max-w-auto bg-blue-400">auto</p> 
+    </div>
+</div>
+<br><hr><br>
+<!--height-->
+<h1>height</h1>
+<div class="flex flex-row items-top">
+    <div class=" h-96 bg-blue-400 w-10">96</div>
+    <div class="h-80 bg-blue-400 w-10">80</div>
+    <div class="h-64 bg-blue-400 w-10">64</div>
+    <div class="h-48 bg-blue-400 w-10">48</div>
+    <div class="h-32 bg-blue-400 w-10">40</div>
+    <div class="h-24 bg-blue-400 w-10">32</div>
+    <div class="h-5 bg-blue-400 w-10">5</div>
+</div><br><hr><br>
+    <!-- https://tailwindcss.com/docs/position -->
+    <h1 class="mb-3">Position</h1>
+    <div class="relative w-1/2 h-40 bg-green-200">
+      <p>Relative</p>
+      <div class="absolute bottom-0 right-0 bg-teal-500 p-4">
+        <p>Absolute</p>
+      </div>
     </div>
 
+    <div class="relative w-1/2 h-40 bg-green-200 mt-5 mb-5">
+      <p>Relative</p>
+      <div class="absolute left-0 top-0 h-16 w-16 bg-teal-500">
+        <p>Absolute</p>
+      </div>
+    </div>
 
+    <div class="relative w-1/2 h-40 bg-green-200 mt-5 mb-5">
+      <p>Relative</p>
+      <div class="absolute right-0 top-0 h-16 w-16 bg-teal-500">
+        <p>Absolute</p>
+      </div>
+    </div>
+
+    <div class="relative w-1/2 h-40 bg-green-200 mt-5 mb-5">
+      <p>Relative</p>
+      <div class="absolute bottom-0 h-16 w-16 bg-teal-500">
+        <p>Absolute</p>
+      </div>
+    </div><br><hr><br>
+
+     <!-- https://tailwindcss.com/docs/display -->
+     <h1 class="mb-3">Display</h1>
+     <div class="bg-indigo-100 p-10 mb-10 w-[600px]">
+       <span class="inline bg-green-700"
+         >1. This is display inline and will wrap normally</span
+       >
+       (this gebrish will added as an inline text)
+       <span class="inline-block bg-green-500"
+         >2. This is display inline-block and will not extend beyond it's
+         parent</span
+       >
+       <span class="block bg-green-600"
+         >3. This is display block and will move to it's own line</span
+       >
+       <span class="hidden bg-green-800"
+         >This is display none and will not display at all</span
+       >
+     </div>
+     <br><hr><br>
+     <!--Background image-->
+     <h1>Background image</h1>
+     <div class="bg-[url('bg.jpeg')] bg-cover bg-center h-screen">
+        
+        <!-- ... -->
+      </div>
+ 
+
+   
 </body>
 
 </html>

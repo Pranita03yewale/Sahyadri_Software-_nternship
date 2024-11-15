@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Hero Section</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <section class="bg-gray-800 text-white">
+    <div class="max-w-7xl mx-auto p-4 md:p-8 lg:py-16">
+      <!-- Responsive Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <!-- Text Content -->
+        <div class="text-center md:text-left">
+          <h1 class="text-3xl md:text-5xl font-bold leading-tight">
+            Welcome to Our Platform
+          </h1>
+          <p class="mt-4 text-gray-300 text-lg">
+            Discover the best features to elevate your business. Join us today and make the most of our cutting-edge solutions.
+          </p>
+          <div class="mt-6">
+            <a 
+              href="#" 
+              class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
+            >
+              Get Started
+            </a>
+            <a 
+              href="#" 
+              class="inline-block bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded ml-4"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div>
+          <img 
+            src="images/hero_section.avif" 
+            alt="Hero Image" 
+            class="w-full h-auto rounded shadow-lg"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
